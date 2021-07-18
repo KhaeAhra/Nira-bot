@@ -13,9 +13,9 @@ client.days = client.translate.days;
 client.meteo = client.translate.meteo;
 client.commands = new Discord.Collection();
 //--------------reading--------------------------- 
-client.loadCommands = require('./handler/loadCommands');
-client.loadEvents  = require("./handler/loadEvents");
-client.loadPlayer = require("./handler/loadPlayer");
+const { loadCommands } = require('./handler/loadCommands');
+const { loadEvents }  = require("./handler/loadEvents");
+const { loadPlayer } = require("./handler/loadPlayer");
 loadCommands(client);
 loadEvents(client);
 loadPlayer(client);
