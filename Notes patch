@@ -1,0 +1,19 @@
+-------------------NOTES PATCH-----------------------
+-----------------------------------------------------
+Version  1.5.4
++fix Weather.js 
++translate (Config for Weather)
++fix 8ball.fs
++add reponse.json
++fix time to delete embed "clear"
++fix time to delete "ping"
++fix Jankenpon (data)
++fix Servinfo
+-----------------------------------------------------
+Version 1.5.3
+- notespatch.js
++ Edit weather
++ code log server
++ code console server
++ fix 
+-----------------------------------------------------
