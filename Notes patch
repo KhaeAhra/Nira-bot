@@ -1,4 +1,7 @@
 -------------------NOTES PATCH-----------------------
+Version 1.5.5
++edit ready.js (multi presence)
++edit bot.js
 -----------------------------------------------------
 Version  1.5.4
 +fix Weather.js 
@@ -9,11 +12,4 @@ Version  1.5.4
 +fix time to delete "ping"
 +fix Jankenpon (data)
 +fix Servinfo
------------------------------------------------------
-Version 1.5.3
-- notespatch.js
-+ Edit weather
-+ code log server
-+ code console server
-+ fix 
 -----------------------------------------------------

@@ -13,13 +13,6 @@ client.days = client.translate.days;
 client.meteo = client.translate.meteo;
 client.commands = new Discord.Collection();
 //--------------reading--------------------------- 
-// const { loadCommands } = require('./handler/loadCommands');
-// const { loadEvents }  = require("./handler/loadEvents");
-// const { loadPlayer } = require("./handler/loadPlayer");
-// loadCommands(client);
-// loadEvents(client);
-// loadPlayer(client);
-//------------------------------------------------
 fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
 
@@ -45,5 +38,4 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 //--------------TOKEN---------------------------
-// client.login(client.config.discord.token);
 client.login(process.env.token);
