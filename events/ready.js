@@ -17,6 +17,6 @@ module.exports = async (client) => {
       activity++;
     }, 30000);
 
-  console.log('Nanashi en Ligne');
+  console.log('Nira#9228 en Ligne');
   console.log(`Connecté sur ${client.guilds.cache.size} serveur(s), pour un total de ${client.users.cache.size} utilisateurs`);
 };
