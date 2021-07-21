@@ -6,7 +6,7 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/KhaeAhra/Nira-bot?color=%2300&logo=javascript) ![GitHub](https://img.shields.io/github/license/KhaeAhra/Nira-bot?logo=LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/KhaeAhra/Nira-bot?color=%2300ff0&logo=GitHub)  ![GitHub last commit](https://img.shields.io/github/last-commit/KhaeAhra/Nira-bot?color=%2300ff0&logo=Github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/KhaeAhra/Nira-bot?logo=GitHub)
 ## 
-[Introduction](#https://github.com/KhaeAhra/Nira-bot#introduction) | [Objectif](#https://github.com/KhaeAhra/Nira-bot#objectif-v200) | [Fonctions](#https://github.com/KhaeAhra/Nira-bot#fonction-de-nira) | [commandes](#https://github.com/KhaeAhra/Nira-bot#fonction-de-nira) | [Crédits](#https://github.com/KhaeAhra/Nira-bot#liste-open-source-code)
+[Introduction](https://github.com/KhaeAhra/Nira-bot#introduction) | [Objectif](https://github.com/KhaeAhra/Nira-bot#objectif-v200) | [Fonctions](https://github.com/KhaeAhra/Nira-bot#fonctions) | [commandes](https://github.com/KhaeAhra/Nira-bot#commandes) | [Crédits](https://github.com/KhaeAhra/Nira-bot#liste-open-source-code--credits)
 
 ## Introduction:
 *To begin with I apologize for my bad English, This is why I express myself in my language, French.
