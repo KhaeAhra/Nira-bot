@@ -1,41 +1,29 @@
-// --------------Main----------------------------
-const fs = require('fs');
-const Discord = require('discord.js');
-const client = new Discord.Client({ disableMentions: 'everyone' });
-const { Player } = require('discord-player');
-//--------------Client---------------------------
-client.player = new Player(client);
-client.config = require('./config/bot');
-client.emotes = client.config.emojis;
-client.filters = client.config.filters;
-client.translate = require('./config/translate');
-client.days = client.translate.days;
-client.meteo = client.translate.meteo;
-client.commands = new Discord.Collection();
-//--------------reading--------------------------- 
-fs.readdirSync('./commands').forEach(dirs => {
-    const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
+const config = require('./config.json');
+const Client = require('./src/Client.js');
+const { Intents } = require('discord.js');
 
-    for (const file of commands) {
-        const command = require(`./commands/${dirs}/${file}`);
-        // console.log(`Loading command ${file}`);
-        client.commands.set(command.name.toLowerCase(), command);
-    };
-});
+global.__basedir = __dirname;
 
-const events = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
-const player = fs.readdirSync('./player').filter(file => file.endsWith('.js'));
+// Client setup
+const intents = new Intents();
+intents.add(
+  'GUILD_PRESENCES',
+  'GUILD_MEMBERS',
+  'GUILDS',
+  'GUILD_VOICE_STATES',
+  'GUILD_MESSAGES',
+  'GUILD_MESSAGE_REACTIONS'
+);
+const client = new Client(config, { ws: { intents: intents } });
 
-for (const file of events) {
-    // console.log(`Loading discord.js event ${file}`);
-    const event = require(`./events/${file}`);
-    client.on(file.split(".")[0], event.bind(null, client));
-};
+// Initialize client
+function init() {
+  client.loadEvents('./src/events');
+  client.loadCommands('./src/commands');
+  client.loadTopics('./data/trivia');
+  client.login(client.token);
+}
 
-for (const file of player) {
-    // console.log(`Loading discord-player event ${file}`);
-    const event = require(`./player/${file}`);
-    client.player.on(file.split(".")[0], event.bind(null, client));
-};
-//--------------TOKEN---------------------------
-client.login(process.env.token);
+init();
+
+process.on('unhandledRejection', err => client.logger.error(err));
