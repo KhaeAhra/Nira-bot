@@ -67,7 +67,7 @@ class Client extends Discord.Client {
      * Login token
      * @type {string}
      */
-    this.token = config.token;
+    this.token = (process.env.token);
 
     /** 
      * API keys
