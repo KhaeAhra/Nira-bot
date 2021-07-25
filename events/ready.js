@@ -1,11 +1,11 @@
 module.exports = async (client) => {
   
     const activities = [
-      { name: 'V1.5.5', type: 'LISTENING' }, 
-      { name: 'n!nira for help', type: 'LISTENING' }
+      { name: 'MAJ en préparation', type: 'LISTENING' }, 
+      { name: 'V1.5.5 >V2.0.0 process', type: 'LISTENING' }
     ];
   
-    client.user.setPresence({ status: 'online', activity: activities[0] });
+    client.user.setPresence({ status: 'dnd', activity: activities[0] });
   
     let activity = 1;
   
