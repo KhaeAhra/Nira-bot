@@ -67,7 +67,7 @@ module.exports = class TriviaCommand extends Command {
         .setTimestamp()
         .setColor(message.guild.me.displayHexColor);
       if (winner) 
-        message.channel.send(answerEmbed.setDescription(`Félicitations ${emojis.winner}, vous avez donné la bonne réponse ! `));
+        message.channel.send(answerEmbed.setDescription(`Félicitations ${winner}, vous avez donné la bonne réponse ! `));
       else message.channel.send(answerEmbed
         .setDescription('Désolé, le temps est écoulé ! Plus de chance la prochaine fois. ')
         .addField('Réponses correctes', origAnswers.join('\n'))
