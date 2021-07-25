@@ -19,11 +19,13 @@ Je laisse également ce code en License MIT (Open Source). Mon bot est hébergé
 ## Objectif V2.0.0:
 
 Ce n'est pas mon premier bot mais, tous on étaient simple dans leurs codes. C'est pour quoi mon but est de le complexifier, pour le rendre plus propres. 
-- [ ] Système remanié (code complexe avec modules)
+- [x] Système remanié (code complexe avec modules)
 - [ ] Adaptation des commandes déjà faite
 - [ ] Adapter le systeme de Musique 
-- [ ] Système de Datebase avec SQLite3 ?
-- [ ] Passer en Version 2.0.0
+- [x] Système de Datebase avec SQLite3 ?
+- [x] Passer en Version 2.0.0
+
+Base remanié avec CalypsoBot pour avoir une bonne base
 
 Tout le code actuel va donc être revisité.
 ##
