@@ -28,7 +28,7 @@ module.exports = class SetFarewellMessageCommand extends Command {
     const embed = new MessageEmbed()
       .setTitle('Paramètre: `Goodbye`')
       .setThumbnail(message.guild.iconURL({ dynamic: true }))
-      .setDescription(`Le \`message Goodbye\` a été mis à jour avec succès . ${emosji.success}`)
+      .setDescription(`Le \`message Goodbye\` a été mis à jour avec succès . ${emojis.success}`)
       .addField('Channel', farewellChannel || '`None`', true)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
