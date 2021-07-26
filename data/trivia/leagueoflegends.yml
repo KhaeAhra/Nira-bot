@@ -178,7 +178,7 @@ questions:
 - question: Quel est le nom du continent sur lequel se trouve League of Legends ? 
   answers:
   - Valoran
-  - question: Quel est le nom Du monde sur lequel se trouve League of Legends ? 
+- question: Quel est le nom Du monde sur lequel se trouve League of Legends ? 
   answers:
   - Runeterra
 - question: Comment s'appelle la faction dirigée par LeBlanc ? 
@@ -233,8 +233,8 @@ questions:
 - question: À quelle faction appartenait Diana ?
   answers:
   - Lunari
-  - question: Quel champion à était découvert en musisque avant son arriver en jeu ?
-    answers:
+- question: Quel champion à était découvert en musisque avant son arriver en jeu ?
+  answers:
   - Seraphine
   - Séraphine
 - question: Qui a trahi Azir ?
@@ -528,6 +528,6 @@ questions:
 - question: Qui est le caméléon curieux ?
   answers: 
   - Neeko
-  - question: Qui est la fleur timide ?
+- question: Qui est la fleur timide ?
   answers: 
   - Lillia
