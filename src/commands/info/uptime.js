@@ -20,7 +20,7 @@ module.exports = class UptimeCommand extends Command {
     const seconds = (d.seconds() == 1) ? `${d.seconds()} second` : `${d.seconds()} seconds`;
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Uptime')
+      .setTitle('En ligne depuis:')
       .setThumbnail('https://i.imgur.com/kCoME8W.pngg')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, et ${seconds}\`\`\``)
       .addField('Date du démarrage', date) 
